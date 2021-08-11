@@ -3,7 +3,9 @@ import Topbar from "./Topbar/Topbar";
 
 function App() {
   return (
-    <Topbar />
+    <>
+      <Topbar />
+    </>
   );
 }
 

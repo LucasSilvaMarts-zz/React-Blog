@@ -1,12 +1,17 @@
 import Header from '../../Header/Header';
+import Posts from '../../Posts/Posts';
+import Sidebar from '../../Sidebar/Sidebar';
 import './home.css'
 
 const Home = () => {
   return (
-    <div className="home">
-      <Header />
-      homepage
-    </div>
+    <>
+    <Header />
+    <section className="home">
+      <Posts />
+      <Sidebar />
+    </section>
+    </>
   )
 }
 

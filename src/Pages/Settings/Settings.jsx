@@ -13,7 +13,7 @@ const Settings = () => {
             <label>Profile Picture</label>
             <div className="settingsProfilePicture">
               <img
-                src="https://images.unsplash.com/photo-1491466424936-e304919aada7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1049&q=80"
+                src="https://yt3.ggpht.com/yti/APfAmoGKjtF_QzM7hOKeELHoJlrhW2imGCw9lvhixef5JA=s108-c-k-c0x00ffffff-no-rj"
                 alt=""
               />
               <label htmlFor="fileInput">

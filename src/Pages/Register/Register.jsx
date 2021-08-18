@@ -5,6 +5,8 @@ const Register = () => {
     <section className="register">
     <span className="registerTitle">Create your user</span>
       <form className="registerForm">
+        <label >Username</label>
+        <input type="text" className="registerInput" placeholder="Enter your username..." />
         <label >Email</label>
         <input type="text" className="registerInput" placeholder="Enter your email..." />
         <label >Password</label>

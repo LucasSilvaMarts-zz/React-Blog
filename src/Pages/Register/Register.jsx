@@ -2,16 +2,16 @@ import './register.css';
 
 const Register = () => {
   return (
-    <section className="login">
-    <span className="loginTitle">Welcome</span>
-      <form className="loginForm">
+    <section className="register">
+    <span className="registerTitle">Create your user</span>
+      <form className="registerForm">
         <label >Email</label>
-        <input type="text" className="loginInput" placeholder="Enter your email..." />
+        <input type="text" className="registerInput" placeholder="Enter your email..." />
         <label >Password</label>
-        <input type="text" className="loginInput" placeholder="Enter your password..." />
-        <button className="loginButton">Login</button>
+        <input type="text" className="registerInput" placeholder="Enter your password..." />
+        <button className="registerButton">Register</button>
       </form>
-      <button className="loginRegisterButton">Register</button>
+      <button className="registerLoginButton">Login</button>
     </section>
   );
 }

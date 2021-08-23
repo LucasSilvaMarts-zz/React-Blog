@@ -14,5 +14,7 @@ mongoose.connect(process.env.MONGO_URL, {
   .then(console.log('connected'))
   .catch((err) => console.log(err));
 
-app.get('/', (req, res) => res.send('Hello World!'));
+
+
+
 app.listen(port, () => console.log(`App listening on port ${port}!`));

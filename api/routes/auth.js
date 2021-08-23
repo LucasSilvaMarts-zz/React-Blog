@@ -31,7 +31,7 @@ router.post('/login', rescue (async (req, res) => {
 }));
 
 router.use((err, _req, res, _next) => {
-  res.status(500).json({ error: `Erro: ${err.message}` });
+  res.status(500).json({ error: `Error: ${err.message}` });
 });
 
 

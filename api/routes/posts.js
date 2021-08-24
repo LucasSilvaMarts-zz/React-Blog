@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const rescue = require('express-rescue');
-const User = require('../models/User');
 const Post = require('../models/Post');
 
 router.post('/', rescue (async (req, res) => {

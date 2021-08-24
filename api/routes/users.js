@@ -43,6 +43,14 @@ router.delete('/:id', rescue (async (req, res) => {
 
 }));
 
+router.get('/:id', rescue (async (req, res) => {
+  const { id } = req.params;
+
+  const user = await User.findById(id);
+  const { password, ...others } = user._doc;
+  res.status(200).json(others);
+}));
+
 router.use((err, _req, res, _next) => {
   res.status(500).json({ error: `Error: ${err.message}` });
 });

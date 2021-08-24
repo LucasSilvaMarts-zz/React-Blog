@@ -31,12 +31,21 @@ router.put('/:id', rescue (async (req, res) => {
 
 }));
 
-router.get('/:id', rescue (async (req, res) => {
+router.delete('/:id', rescue (async (req, res) => {
   const { id } = req.params;
+  const { username } = req.body;
 
-  const user = await User.findById(id);
-  const { password, ...others } = user._doc;
-  res.status(200).json(others);
+  const post = await Post.findById(id);
+
+  if (post.username === username) {
+    await post.delete();
+
+    res.status(200).json('Post deleted...');
+
+  } else {
+    res.status(401).json('You can delete only your post!');
+  }
+
 }));
 
 router.use((err, _req, res, _next) => {

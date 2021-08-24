@@ -48,6 +48,14 @@ router.delete('/:id', rescue (async (req, res) => {
 
 }));
 
+router.get('/:id', rescue (async (req, res) => {
+  const { id } = req.params;
+
+  const post = await Post.findById(id);
+
+  res.status(200).json(post);
+}));
+
 router.use((err, _req, res, _next) => {
   res.status(500).json({ error: `Error: ${err.message}` });
 });

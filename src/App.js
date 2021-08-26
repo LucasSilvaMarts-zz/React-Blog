@@ -6,9 +6,11 @@ import Write from "./Pages/Write/Write.jsx";
 import Settings from "./Pages/Settings/Settings.jsx";
 import Single from "./Pages/Single/Single";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
   return (
     <Router>
       <Topbar />

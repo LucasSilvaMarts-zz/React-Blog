@@ -2,13 +2,14 @@ import { Link } from 'react-router-dom';
 import './post.css';
 
 const Post = ({ post }) => {
+  const publicFolder = "http://localhost:3001/images/";
   return (
     <div className="post">
       {
         post.photo && (
         <img
           className="postImg"
-          src={ post.photo }
+          src={ publicFolder + post.photo }
           alt=""
         />
         )
